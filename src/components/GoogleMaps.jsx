@@ -42,6 +42,8 @@ const MapContainer = (props) => {
     setMapMarkers(markers);
   };
 
+  console.log(mapMarkers);
+
   useEffect(() => {
     getCoords(searchResults);
   }, [searchResults]);
