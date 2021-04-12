@@ -17,7 +17,7 @@ const MapContainer = (props) => {
   };
 
   const getCoords = async (events) => {
-    //using the google maps api to geocode addresses into lat and lng for map marking
+    //using the google maps api to geocode addresses into lat and lng for map marking (gets coords just fine but shows undefined when trying to map through mapMarkers)
     const markers = [];
     Promise.all(
       events.map((event) =>
