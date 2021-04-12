@@ -52,7 +52,7 @@ const EventsTable = (props) => {
   useEffect(() => { // setting the the list of events based on the searched term
     if(!searchTerm) setSearchResults(filteredEvents);
     setSearchResults(filteredEvents.filter(e => searchTable(e, searchTerm)));
-  }, []);
+  }, [setSearchResults, searchTerm]);
 
   const handleChangePage = (event, newPage) => { // pagination page change
     setPage(newPage);
